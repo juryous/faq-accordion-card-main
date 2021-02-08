@@ -16,3 +16,61 @@
   /* Dividers */
   --Light-grayish-blue: hsl(240, 5%, 91%);
 }
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 13em 2em;
+  padding-bottom: 7em;
+  min-height: 100vh;
+  background: linear-gradient(var(--Soft-violet), var(--Soft-blue)) no-repeat;
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 0.75rem;
+}
+
+.content {
+  /* position: relative; */
+  text-align: center;
+  color: var(--Very-dark-grayish-blue);
+  background-color: #fff;
+  margin: 0 auto;
+  padding: 0 2em 4em 2em;
+  border-radius: 20px;
+}
+
+.img-woman {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -55%);
+}
+
+.faq {
+  text-align: left;
+}
+
+.content h1 {
+  font-size: 2rem;
+  text-align: center;
+  margin: 2rem 0 0.85rem 0;
+}
+
+.qa-pair {
+  font-size: 0.8rem;
+  text-align: justify;
+  text-align-last: justify;
+  padding: 0.35em 0;
+  border-bottom: 1px solid var(--Light-grayish-blue);
+}
+
+.question {
+  display: inline-block;
+}
+
+.answer {
+  display: none;
+}
